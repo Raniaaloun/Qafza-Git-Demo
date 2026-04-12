@@ -1,0 +1,54 @@
+.theme-toggle {
+  background: none;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #8b949e;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  padding: 6px 14px;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #1f2328;
+}
+
+body.light .card {
+  background-color: #f6f8fa;
+  border-color: #d0d7de;
+}
+
+body.light h1 {
+  color: #1f2328;
+}
+
+body.light .bio {
+  color: #57606a;
+}
+
+body.light .skill {
+  background-color: #eaeef2;
+  border-color: #d0d7de;
+  color: #0969da;
+}
+
+body.light .link {
+  background-color: #eaeef2;
+  border-color: #d0d7de;
+  color: #1f2328;
+}
+
+body.light .theme-toggle {
+  border-color: #d0d7de;
+  color: #57606a;
+}

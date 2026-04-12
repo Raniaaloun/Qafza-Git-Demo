@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #0d1117; /* ← snippet-1 changes this to #0b1120 / snippet-4 changes this to #0a0d12 — CONFLICT TARGET */
+  color: #e6edf3;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: #e6edf3;
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* --------------------------------------------- */ 
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  max-width: 480px;
+  padding: 40px;
+  width: 100%;
+}
+
+.avatar {
+  align-items: center;
+  background: linear-gradient(135deg, #238636, #1f6feb);
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  font-family: 'Space Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  height: 80px;
+  justify-content: center;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  width: 80px;
+}
+
+.role {
+  color: #58a6ff;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
