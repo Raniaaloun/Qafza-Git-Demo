@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bendy's Ink Machine</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #f4efe6;
+    color: #2b2b2b;
+    font-family: "Georgia", "Times New Roman", serif;
+    scroll-behavior: smooth;
+}
+
+.container-narrow {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.nav-bar {
+    background: #2b2b2b;
+    border-bottom: 4px solid #b89b5e;
+}
+
+.nav-link {
+    color: #e6dcc6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: #b89b5e;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+                url("https://images.unsplash.com/photo-1528605248644-14dd04022da1");
+    background-size: cover;
+    background-position: center;
+    color: #f5f1e8;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+}
+
+.hero-buttons a {
+    border: 2px solid #b89b5e;
+}
+
+.hero-buttons a:hover {
+    background: #b89b5e;
+    color: #2b2b2b;
+}
+
+.btn-primary {
+    background: #b89b5e;
+    color: #2b2b2b;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #9f854f;
+}
+
+.btn-outline {
+    color: #b89b5e;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: 2px solid #b89b5e;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #b89b5e;
+    color: #2b2b2b;
+}
+
+.card {
+    background: #fffaf0;
+    border: 2px solid #d6c7a1;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    color: #5a4f3c;
+    margin-bottom: 4rem;
+}
+
+/* FOOTER */
+.footer {
+    background: #2b2b2b;
+    color: #d8cdb2;
+    padding: 4rem 2rem;
+}
+
+.footer a:hover {
+    color: #b89b5e;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar py-4">
+    <div class="container-narrow flex justify-between items-center px-6">
+        <div class="text-2xl font-bold text-[#b89b5e] tracking-widest">
+            BENDY'S INK MACHINE
+        </div>
+        <div class="space-x-8 text-sm">
+            <a href="gabi.html" class="nav-link">Home</a>
+            <a href="gabiservice.html" class="nav-link">Service</a>
+            <a href="gabimenu.html" class="nav-link">Menu</a>
+            <a href="gabiorder.html" class="nav-link">Order</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero min-h-screen flex items-center">
+    <div class="container-narrow px-6">
+        <h1 class="hero-title font-bold">
+            Bendy's Ink Machine
+        </h1>
+        <p class="mt-6 max-w-xl mx-auto text-lg">
+            A 1900s-inspired dining studio where ink, craft,
+            and timeless flavor meet.
+        </p>
+        <div class="hero-buttons mt-10 flex justify-center gap-6">
+            <a href="gabimenu.html" class="btn-primary">
+                Explore Menu
+            </a>
+            <a href="gabiorder.html" class="btn-outline">
+                Order Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section-padding">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Our Story</h2>
+        <p class="mt-6 text-lg mx-auto max-w-3xl">
+            Founded on early industrial artistry,
+            Bendy's Ink Machine draws inspiration
+            from workshops, studios, and fire-lit kitchens.
+        </p>
+        <p class="mt-4 text-lg mx-auto max-w-3xl">
+            Each dish reflects patience, intention,
+            and old-world technique.
+        </p>
+    </div>
+</section>
+
+<!-- WHY WE EXIST -->
+<section class="section-padding bg-[#ede6d6]">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Why We Exist</h2>
+        <div class="grid md:grid-cols-3 gap-6 justify-center">
+            <div class="card">
+                <h3 class="text-xl font-bold">Our Mission</h3>
+                <p class="mt-3">
+                    Bring classic flavors to life with artistic precision.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Craft & Care</h3>
+                <p class="mt-3">
+                    Every plate is handcrafted with respect for ingredients and tradition.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Atmosphere</h3>
+                <p class="mt-3">
+                    Early 1900s ink studio vibes with warm, inviting interiors.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED CREATIONS -->
+<section class="section-padding">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Featured Creations</h2>
+        <div class="grid md:grid-cols-3 gap-6 justify-center">
+            <div class="card">
+                <h3 class="text-xl font-bold">Ink-Black Burger</h3>
+                <p class="mt-3">Charcoal bun, slow-grilled beef.</p>
+                <span class="block mt-2 font-bold text-[#b89b5e]">$15.99</span>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Studio Pasta</h3>
+                <p class="mt-3">Creamed herbs, forest greens.</p>
+                <span class="block mt-2 font-bold text-[#b89b5e]">$13.99</span>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Golden Ink Ribs</h3>
+                <p class="mt-3">Slow-cooked, warm spices.</p>
+                <span class="block mt-2 font-bold text-[#b89b5e]">$18.99</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHEF SPOTLIGHT -->
+<section class="section-padding bg-[#ede6d6]">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Chef Spotlight</h2>
+        <div class="grid md:grid-cols-2 gap-6 justify-center">
+            <div class="card">
+                <h3 class="text-xl font-bold">Head Chef Edgar</h3>
+                <p class="mt-3">
+                    Master of traditional culinary arts, blending flavors with a historic touch.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Pastry Chef Alma</h3>
+                <p class="mt-3">
+                    Creates desserts inspired by 1900s Europe, rich in elegance and style.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-padding">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="grid md:grid-cols-3 gap-6 justify-center">
+            <div class="card">
+                <p>"A time-traveling meal experience. Every bite feels classic yet alive!"</p>
+                <span class="block mt-2 font-bold">- Jonathan H.</span>
+            </div>
+            <div class="card">
+                <p>"The place alone makes you feel like you're in an old artist studio."</p>
+                <span class="block mt-2 font-bold">- Marie L.</span>
+            </div>
+            <div class="card">
+                <p>"Rich flavors, and perfect service." </p>
+                <span class="block mt-2 font-bold">- Felix K.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIALS -->
+<section class="section-padding bg-[#ede6d6]">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Weekly Specials</h2>
+        <div class="grid md:grid-cols-2 gap-6 justify-center">
+            <div class="card">
+                <h3 class="text-xl font-bold">Ink-Stuffed Chicken</h3>
+                <p class="mt-3">Slow-cooked chicken stuffed with herbs and ink-spiced sauce.</p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">Vintage Salad</h3>
+                <p class="mt-3">Seasonal greens with an old-world vinaigrette.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-padding">
+    <div class="container-narrow px-6">
+        <h2 class="section-title">Join Our Newsletter</h2>
+        <p class="mt-4">Receive updates, specials, and exclusive recipes from Bendy's Ink Machine.</p>
+        <input type="email" id="emailInput" placeholder="Enter your email" class="mt-4 p-3 border border-[#b89b5e] rounded-md w-1/2 text-center">
+        <br>
+        <button class="btn-primary mt-4" onclick="subscribe()">Subscribe</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p class="text-sm tracking-widest mb-4">
+        
+    </p>
+    <div class="space-x-6 text-sm">
+        <a href="gabiservice.html">Service</a>
+        <a href="gabimenu.html">Menu</a>
+        <a href="gabiorder.html">Order</a>
+    </div>
+</footer>
+
+<script>
+function subscribe() {
+    alert("Successfully subscribed!");
+    document.getElementById("emailInput").value = "";
+}
+</script>
+
+</body>
+</html>

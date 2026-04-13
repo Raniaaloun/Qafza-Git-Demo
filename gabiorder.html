@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order | Bendy's Ink Machine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* GENERAL STYLING */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #f4efe6;
+    scroll-behavior: smooth;
+    color: #2b2b2b;
+}
+
+/* NAVIGATION */
+.nav-bar {
+    background: #2b2b2b;
+    border-bottom: 4px solid #b89b5e;
+}
+.nav-link {
+    color: #e6dcc6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #b89b5e;
+}
+
+/* SECTION STYLING */
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.card {
+    background: #fffaf0;
+    border: 2px solid #d6c7a1;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #b89b5e;
+    color: #2b2b2b;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background: #9f854f;
+}
+.btn-outline {
+    color: #b89b5e;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: 2px solid #b89b5e;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+.btn-outline:hover {
+    background: #b89b5e;
+    color: #2b2b2b;
+}
+
+/* FOOTER */
+.footer {
+    background: #2b2b2b;
+    color: #d8cdb2;
+    padding: 4rem 2rem;
+}
+.footer a:hover {
+    color: #b89b5e;
+}
+
+/* FORM ELEMENTS */
+select, textarea {
+    border: 2px solid #d6c7a1;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* EXTRA CARD STYLING */
+.order-step {
+    background: #fdf6e3;
+    border: 2px solid #d6c7a1;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.order-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* NEWSLETTER INPUT */
+#emailInput {
+    border: 2px solid #b89b5e;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+#emailInput:focus {
+    border-color: #9f854f;
+    outline: none;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar py-4">
+<div class="container mx-auto flex justify-between items-center px-6">
+    <div class="text-2xl font-bold text-[#b89b5e] tracking-widest">BENDY'S INK MACHINE</div>
+    <div class="space-x-8 text-sm">
+        <a href="gabi.html" class="nav-link">Home</a>
+        <a href="gabiservice.html" class="nav-link">Service</a>
+        <a href="gabimenu.html" class="nav-link">Menu</a>
+        <a href="gabiorder.html" class="nav-link">Order</a>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="section-padding bg-[#2b2b2b] text-[#f4efe6]">
+<h1 class="text-5xl font-bold text-[#b89b5e]">Place Your Order</h1>
+<p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+Choose your dishes, customize your experience, and enjoy the process.
+</p>
+</section>
+
+<!-- ORDER FORM -->
+<section class="section-padding">
+<div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 justify-center">
+
+<!-- LEFT FORM CARD -->
+<div class="card">
+<h2 class="text-3xl font-bold mb-6">Select Main Dish</h2>
+<select id="mainDish">
+<option value="">Choose a main</option>
+<option value="Ink-Black Burger">Ink-Black Burger</option>
+<option value="Golden Ink Ribs">Golden Ink Ribs</option>
+<option value="Studio Pasta">Studio Pasta</option>
+<option value="Ink-Seared Chicken">Ink-Seared Chicken</option>
+<option value="Golden Glaze Salmon">Golden Glaze Salmon</option>
+<option value="Forest Grain Bowl">Forest Grain Bowl</option>
+</select>
+
+<h2 class="text-3xl font-bold mt-8 mb-6">Select Side</h2>
+<select id="sideDish">
+<option value="">Choose a side</option>
+<option value="Golden Ink Fries">Golden Ink Fries</option>
+<option value="Forest Green Salad">Forest Green Salad</option>
+<option value="Studio Soup">Studio Soup</option>
+<option value="Ink-Dipped Bread">Ink-Dipped Bread</option>
+</select>
+
+<h2 class="text-3xl font-bold mt-8 mb-6">Select Drink</h2>
+<select id="drink">
+<option value="">Choose a drink</option>
+<option value="Ink Cold Brew">Ink Cold Brew</option>
+<option value="Golden Tea">Golden Tea</option>
+<option value="Forest Citrus Water">Forest Citrus Water</option>
+</select>
+</div>
+
+<!-- RIGHT SUMMARY CARD -->
+<div class="card border-l-8 border-[#b89b5e]">
+<h2 class="text-3xl font-bold mb-6">Order Summary</h2>
+<div class="space-y-4 text-lg text-left">
+<div><span class="font-semibold">Main Dish:</span> <span id="summaryMain" class="ml-2 text-gray-600">None selected</span></div>
+<div><span class="font-semibold">Side:</span> <span id="summarySide" class="ml-2 text-gray-600">None selected</span></div>
+<div><span class="font-semibold">Drink:</span> <span id="summaryDrink" class="ml-2 text-gray-600">None selected</span></div>
+</div>
+
+<div class="mt-8">
+<label class="block text-lg font-semibold mb-2">Special Instructions</label>
+<textarea id="notes" rows="5" placeholder="Any requests?"></textarea>
+</div>
+
+<div class="mt-8">
+<button id="placeOrder" class="btn-primary w-full py-3 text-xl font-bold">Confirm Order</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- HOW ORDERING WORKS -->
+<section class="section-padding bg-[#ede6d6]">
+<h2 class="section-title">How Ordering Works</h2>
+<div class="grid md:grid-cols-3 gap-6 justify-center">
+<div class="order-step">
+<h3 class="text-2xl font-bold">Step One</h3>
+<p class="mt-2">Choose your preferred main dish, side, and drink.</p>
+</div>
+<div class="order-step">
+<h3 class="text-2xl font-bold">Step Two</h3>
+<p class="mt-2">Add any special instructions to personalize your order.</p>
+</div>
+<div class="order-step">
+<h3 class="text-2xl font-bold">Step Three</h3>
+<p class="mt-2">Confirm your order and let us handle the rest.</p>
+</div>
+</div>
+</section>
+
+<!-- ORDER ASSURANCE -->
+<section class="section-padding">
+<h2 class="section-title">Order Assurance</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg">Every order is reviewed before preparation begins. Accuracy, care, and timing are prioritized at every step.</p>
+<p class="mt-4 max-w-2xl mx-auto text-lg">If something needs adjustment, our team reaches out before finalizing.</p>
+<p class="mt-4 max-w-2xl mx-auto text-lg">We aim to deliver consistency and quality no matter how you order.</p>
+</section>
+
+<!-- READY TO ORDER -->
+<section class="section-padding bg-[#2b2b2b] text-[#f4efe6]">
+<h2 class="text-4xl font-bold text-[#b89b5e]">Ready When You Are</h2>
+<p class="mt-4 text-xl max-w-xl mx-auto">Your meal is just a few selections away.</p>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-padding bg-[#ede6d6]">
+<h2 class="section-title">Join Our Newsletter</h2>
+<p class="mt-2">Get updates, specials, and exclusive recipes from Bendy's Ink Machine.</p>
+<input type="email" id="emailInput" placeholder="Enter your email" class="mt-4">
+<br>
+<button class="btn-primary mt-4" onclick="subscribe()">Subscribe</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<p class="text-sm tracking-widest mb-4">© 2026 Bendy's Ink Machine</p>
+<div class="space-x-6 text-sm">
+<a href="gabi.html">Home</a>
+<a href="gabiservice.html">Service</a>
+<a href="gabimenu.html">Menu</a>
+</div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+const mainDish = document.getElementById("mainDish");
+const sideDish = document.getElementById("sideDish");
+const drink = document.getElementById("drink");
+const summaryMain = document.getElementById("summaryMain");
+const summarySide = document.getElementById("summarySide");
+const summaryDrink = document.getElementById("summaryDrink");
+const placeOrder = document.getElementById("placeOrder");
+
+mainDish.addEventListener("change", () => {
+    summaryMain.textContent = mainDish.value || "None selected";
+});
+sideDish.addEventListener("change", () => {
+    summarySide.textContent = sideDish.value || "None selected";
+});
+drink.addEventListener("change", () => {
+    summaryDrink.textContent = drink.value || "None selected";
+});
+
+placeOrder.addEventListener("click", () => {
+    if (!mainDish.value) {
+        alert("Please select a main dish before confirming.");
+        return;
+    }
+    alert("Your order has been received. Thank you for choosing Bendy's Ink Machine.");
+});
+
+function subscribe() {
+    alert("Successfully subscribed!");
+    document.getElementById("emailInput").value = "";
+}
+</script>
+
+</body>
+</html>

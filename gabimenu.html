@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Bendy's Ink Machine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #f4efe6;
+    scroll-behavior: smooth;
+    color: #2b2b2b;
+}
+
+/* NAVIGATION */
+.nav-bar {
+    background: #2b2b2b;
+    border-bottom: 4px solid #b89b5e;
+}
+.nav-link {
+    color: #e6dcc6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #b89b5e;
+}
+
+/* SECTION STYLING */
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/* CARD STYLING */
+.card {
+    background: #fffaf0;
+    border: 2px solid #d6c7a1;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #b89b5e;
+    color: #2b2b2b;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background: #9f854f;
+}
+.btn-outline {
+    color: #b89b5e;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: 2px solid #b89b5e;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+.btn-outline:hover {
+    background: #b89b5e;
+    color: #2b2b2b;
+}
+
+/* FOOTER */
+.footer {
+    background: #2b2b2b;
+    color: #d8cdb2;
+    padding: 4rem 2rem;
+}
+.footer a:hover {
+    color: #b89b5e;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar py-4">
+<div class="container mx-auto flex justify-between items-center px-6">
+    <div class="text-2xl font-bold text-[#b89b5e] tracking-widest">BENDY'S INK MACHINE</div>
+    <div class="space-x-8 text-sm">
+        <a href="gabi.html" class="nav-link">Home</a>
+        <a href="gabiservice.html" class="nav-link">Service</a>
+        <a href="gabimenu.html" class="nav-link">Menu</a>
+        <a href="gabiorder.html" class="nav-link">Order</a>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="section-padding bg-[#2b2b2b] text-[#f4efe6]">
+<h1 class="text-5xl font-bold text-[#b89b5e]">Our Menu</h1>
+<p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+Every item is crafted to balance darkness, warmth, and depth of flavor.
+</p>
+</section>
+
+<!-- STARTERS -->
+<section class="section-padding">
+<h2 class="section-title text-[#2b2b2b]">Starters</h2>
+<div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Ink-Dipped Bread</h3>
+<p class="mt-2 text-lg">Warm artisan bread with black garlic butter and herb oil.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$6.99</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Forest Green Salad</h3>
+<p class="mt-2 text-lg">Mixed greens, toasted seeds, citrus dressing, and fresh herbs.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$8.99</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Golden Ink Fries</h3>
+<p class="mt-2 text-lg">Crispy potatoes tossed in warm spices with smoked sauce.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$7.49</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Studio Soup</h3>
+<p class="mt-2 text-lg">Slow-simmered seasonal vegetables with deep flavor.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$6.49</span>
+</div>
+</div>
+</section>
+
+<!-- MAIN DISHES -->
+<section class="section-padding bg-[#ede6d6]">
+<h2 class="section-title text-[#2b2b2b]">Main Dishes</h2>
+<div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Ink-Black Burger</h3>
+<p class="mt-2 text-lg">Charcoal bun, smoked beef patty, aged cheese, warm spice sauce.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$15.99</span>
+</div>
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Golden Ink Ribs</h3>
+<p class="mt-2 text-lg">Slow-cooked ribs glazed in a honeyed spice reduction.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$18.99</span>
+</div>
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Studio Pasta</h3>
+<p class="mt-2 text-lg">Creamy herb sauce, forest greens, and fresh parmesan.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$13.99</span>
+</div>
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Ink-Seared Chicken</h3>
+<p class="mt-2 text-lg">Pan-seared chicken with earthy spices and roasted vegetables.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$16.49</span>
+</div>
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Forest Grain Bowl</h3>
+<p class="mt-2 text-lg">Roasted grains, greens, herbs, and a tahini drizzle.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$12.99</span>
+</div>
+<div class="card bg-[#fffaf0]">
+<h3 class="text-2xl font-bold">Golden Glaze Salmon</h3>
+<p class="mt-2 text-lg">Pan-roasted salmon finished with warm citrus glaze.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$19.49</span>
+</div>
+</div>
+</section>
+
+<!-- DESSERTS -->
+<section class="section-padding">
+<h2 class="section-title text-[#2b2b2b]">Desserts</h2>
+<div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Ink Chocolate Tart</h3>
+<p class="mt-2 text-lg">Dark chocolate filling with a crisp crust and warm spice notes.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$7.99</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Golden Vanilla Cream</h3>
+<p class="mt-2 text-lg">Silky vanilla cream topped with caramelized sugar.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$6.99</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Forest Berry Plate</h3>
+<p class="mt-2 text-lg">Seasonal berries served with light cream and honey.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$6.49</span>
+</div>
+<div class="card border-l-8 border-[#b89b5e]">
+<h3 class="text-2xl font-bold">Warm Ink Cake</h3>
+<p class="mt-2 text-lg">Soft chocolate cake with molten center.</p>
+<span class="block mt-3 font-bold text-[#b89b5e]">$8.49</span>
+</div>
+</div>
+</section>
+
+<!-- DRINKS -->
+<section class="section-padding bg-[#2b2b2b] text-[#f4efe6]">
+<h2 class="section-title text-[#b89b5e]">Drinks</h2>
+<div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+<div class="card bg-[#1f3d2b]">
+<h3 class="text-xl font-semibold">Ink Cold Brew</h3>
+<p class="mt-2">Slow-steeped coffee with deep flavor.</p>
+<span class="block mt-2 text-[#b89b5e] font-bold">$4.99</span>
+</div>
+<div class="card bg-[#1f3d2b]">
+<h3 class="text-xl font-semibold">Golden Tea</h3>
+<p class="mt-2">Warm spiced tea with honey notes.</p>
+<span class="block mt-2 text-[#b89b5e] font-bold">$3.99</span>
+</div>
+<div class="card bg-[#1f3d2b]">
+<h3 class="text-xl font-semibold">Forest Citrus Water</h3>
+<p class="mt-2">Infused water with herbs and citrus.</p>
+<span class="block mt-2 text-[#b89b5e] font-bold">$2.99</span>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<p class="text-sm tracking-widest mb-4">© 2026 Bendy's Ink Machine</p>
+<div class="space-x-6 text-sm">
+<a href="gabi.html">Home</a>
+<a href="gabiservice.html">Service</a>
+<a href="gabiorder.html">Order</a>
+</div>
+</footer>
+
+</body>
+</html>
